@@ -8,11 +8,55 @@ body{
 }
 
 
+
+/*!generics *************************************/
 .decoration-under-app{
     height: 150px;
     background-color: #009688;
 }
+.bordo{
+    border: 1px solid black;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+ul{
+    list-style-type: none;
+}
 /*! main app****************************/
 .app-wrapper{
-    
+    height: 830px ;
+    width: 1300px;
+    background-color: wheat;
+    margin: auto;
+    position: fixed;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%);
+}
+/*user profile**************************/
+.user-profile{
+    min-height: 60px;
+}
+
+/* promo ***********************************/
+.promo{
+    background-color: #8edafc;
+    min-height: 60px;
+}
+/* contact list ***********************************/
+.search-bar{
+    min-height: 60px;
+}
+.contact-wrapper{
+    height: 640px;
+    overflow: auto;
+}
+.pic-container{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: red;
 }
