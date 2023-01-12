@@ -28,7 +28,7 @@ ul{
 /*! main app****************************/
 /*! left side ***********************************/
 .app-wrapper{
-    max-height: 830px ;
+   
     width: 1300px;
     background-color: wheat;
     margin: auto;
@@ -41,7 +41,20 @@ ul{
 .user-profile{
     min-height: 60px;
 }
-
+.username{
+    min-width: 100px;
+    align-self: center;
+}
+.promo .bi-bell-fill{
+    font-size: 23px;
+    position: relative;
+    top: 5px;
+    color: #8edafc;
+}
+.strike{
+    scale: 0.9;
+    text-decoration: underline;
+}
 /* promo ***********************************/
 .promo{
     background-color: #8edafc;
@@ -52,14 +65,14 @@ ul{
     min-height: 60px;
 }
 .contact-wrapper{
-    height: 640px;
+    max-height: 582px;
     overflow: auto;
 }
 .pic-container{
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #fff;
 }
 .contact-wrapper li {
     background-color: #fff;
@@ -87,4 +100,7 @@ ul{
 .user-message{
     max-height: 14%;
     
+}
+.user-message .text-bar{
+    width: 75%;
 }

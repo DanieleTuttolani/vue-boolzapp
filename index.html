@@ -7,6 +7,7 @@
     <title>Boolzap daniele</title>
     <!--bootstrap-->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!--css-->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,27 +20,126 @@
             <div class="row">
                 <div class="col-4 bordo p-0">  
                     <!--user-->
-                    <div class="user-profile d-flex bordo justify-content-between">
-                        <div class="img-wrapper">
-                            img e nome
+                    <div class="user-profile d-flex bordo justify-content-between p-1">
+                        <div class="pic-container d-flex">
+                            <img src="img/avatar_io.jpg" alt="">
+                            <p class="username m-0">Nome Utente</p>
                         </div>
-                        <div class="social-options">
-                            icone varie
+                        <div class="social-options text-light p-2 align-self-center fs-5">
+                            <i class="bi bi-circle"></i>
+                            <i class="bi bi-chat-left-fill"></i>
+                            <i class="bi bi-three-dots-vertical"></i>
                         </div>
                     </div>
                     <!--promo message-->
-                    <div class="promo">
-
+                    <div class="promo d-flex p-1">
+                        <div class="pic-container text-center pt-2"> 
+                            <i class="bi bi-bell-fill "></i>
+                        </div>
+                        <div class="p-2">
+                            <p class="m-0">Ricevi notifiche per i tuoi messaggi</p>
+                            <p class="m-0 strike">Attiva notifiche desktop</p>
+                        </div>
                     </div>
                     <!--contact list-->
                     <div class="contact-list">
-                        <div class="search-bar">
-                            <input type="text" placeholder="cerca">
+                        <div class="search-bar p-2">
+                            <input type="text" placeholder="cerca" class="form-control">
                         </div>
 
                         <div class="contact-wrapper">
                             <ul class="p-0">
-                                <li class="d-flex">
+                                <li class="contact d-flex">
+                                    <div class="pic-container">
+                                        <img src="img/avatar_1.jpg" alt="">
+                                    </div>
+                                    <div class="contact-info">
+                                        <p>nome prova</p>
+                                        <p>info prova</p>
+                                    </div>
+                                </li>
+                                <li class="contact d-flex">
+                                    <div class="pic-container">
+                                        <img src="img/avatar_1.jpg" alt="">
+                                    </div>
+                                    <div class="contact-info">
+                                        <p>nome prova</p>
+                                        <p>info prova</p>
+                                    </div>
+                                </li>
+                                <li class="contact d-flex">
+                                    <div class="pic-container">
+                                        <img src="img/avatar_1.jpg" alt="">
+                                    </div>
+                                    <div class="contact-info">
+                                        <p>nome prova</p>
+                                        <p>info prova</p>
+                                    </div>
+                                </li>
+                                <li class="contact d-flex">
+                                    <div class="pic-container">
+                                        <img src="img/avatar_1.jpg" alt="">
+                                    </div>
+                                    <div class="contact-info">
+                                        <p>nome prova</p>
+                                        <p>info prova</p>
+                                    </div>
+                                </li>
+                                <li class="contact d-flex">
+                                    <div class="pic-container">
+                                        <img src="img/avatar_1.jpg" alt="">
+                                    </div>
+                                    <div class="contact-info">
+                                        <p>nome prova</p>
+                                        <p>info prova</p>
+                                    </div>
+                                </li>
+                                <li class="contact d-flex">
+                                    <div class="pic-container">
+                                        <img src="img/avatar_1.jpg" alt="">
+                                    </div>
+                                    <div class="contact-info">
+                                        <p>nome prova</p>
+                                        <p>info prova</p>
+                                    </div>
+                                </li>
+                                <li class="contact d-flex">
+                                    <div class="pic-container">
+                                        <img src="img/avatar_1.jpg" alt="">
+                                    </div>
+                                    <div class="contact-info">
+                                        <p>nome prova</p>
+                                        <p>info prova</p>
+                                    </div>
+                                </li>
+                                <li class="contact d-flex">
+                                    <div class="pic-container">
+                                        <img src="img/avatar_1.jpg" alt="">
+                                    </div>
+                                    <div class="contact-info">
+                                        <p>nome prova</p>
+                                        <p>info prova</p>
+                                    </div>
+                                </li>
+                                <li class="contact d-flex">
+                                    <div class="pic-container">
+                                        <img src="img/avatar_1.jpg" alt="">
+                                    </div>
+                                    <div class="contact-info">
+                                        <p>nome prova</p>
+                                        <p>info prova</p>
+                                    </div>
+                                </li>
+                                <li class="contact d-flex">
+                                    <div class="pic-container">
+                                        <img src="img/avatar_1.jpg" alt="">
+                                    </div>
+                                    <div class="contact-info">
+                                        <p>nome prova</p>
+                                        <p>info prova</p>
+                                    </div>
+                                </li>
+                                <li class="contact d-flex">
                                     <div class="pic-container">
                                         <img src="img/avatar_1.jpg" alt="">
                                     </div>
@@ -114,12 +214,12 @@
                         </div>
                     </div>
 
-                    <div class="user-message d-flex">
-                        <p>icona</p>
-                        <div>
-                            <input type="text">
+                    <div class="user-message d-flex justify-content-between p-3">
+                        <p><i class="bi bi-emoji-expressionless"></i></p>
+                        <div class="text-bar">
+                            <input type="text" class="form-control">
                         </div>
-                        <p>icona microfono</p>
+                        <p><i class="bi bi-mic-fill"></i></p>
                     </div>
                 </div>
             </div>
