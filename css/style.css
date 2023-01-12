@@ -26,8 +26,9 @@ ul{
     list-style-type: none;
 }
 /*! main app****************************/
+/*! left side ***********************************/
 .app-wrapper{
-    height: 830px ;
+    max-height: 830px ;
     width: 1300px;
     background-color: wheat;
     margin: auto;
@@ -59,4 +60,31 @@ ul{
     width: 60px;
     border-radius: 50%;
     background-color: red;
+}
+.contact-wrapper li {
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+}
+/*! right side *******************************/
+.main-chat{
+    height: 650px;
+    overflow:auto;
+    position: relative;
+}
+.main-chat p{
+    width: fit-content;
+}
+.green-txt{
+    background-color: #d5f9ba;
+    position: relative;
+    left    : 80%;
+}
+.white-txt{
+    background-color: white;
+}
+
+/* write section *********************/
+.user-message{
+    max-height: 14%;
+    
 }
