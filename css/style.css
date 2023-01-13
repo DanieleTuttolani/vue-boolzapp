@@ -30,7 +30,7 @@ ul{
 .app-wrapper{
    
     width: 1300px;
-    background-color: wheat;
+    background-color: #fff;
     margin: auto;
     position: fixed;
     left: 50%;
@@ -83,6 +83,7 @@ ul{
     height: 650px;
     overflow:auto;
     position: relative;
+    background-image: url(../img/mine.jpg);
 }
 .main-chat p{
     width: fit-content;
@@ -95,12 +96,24 @@ ul{
 .white-txt{
     background-color: white;
 }
+.chat-files .bi{
+    align-self: center;
+    font-size: 25px;
+    margin: 0  10px;
+    color: gray;
+}
 
 /* write section *********************/
 .user-message{
     max-height: 14%;
-    
+    background-color: #fff;
 }
 .user-message .text-bar{
-    width: 75%;
+    width: 85%;
+}
+.user-message .bi{
+    align-self: center;
+    font-size: 25px;
+    margin: 0  10px;
+    color: gray;
 }

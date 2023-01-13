@@ -15,220 +15,97 @@
     <div class="decoration-under-app"></div>
 
     <!--main app-->
-    <div class="app-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 bordo p-0">  
-                    <!--user-->
-                    <div class="user-profile d-flex bordo justify-content-between p-1">
-                        <div class="pic-container d-flex">
-                            <img src="img/avatar_io.jpg" alt="">
-                            <p class="username m-0">Nome Utente</p>
+    <div id="root">
+        <div class="app-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 bordo p-0">  
+                        <!--user-->
+                        <div class="user-profile d-flex bordo justify-content-between p-1">
+                            <div class="pic-container d-flex">
+                                <img src="img/avatar_io.jpg" alt="">
+                                <p class="username m-0">Nome Utente</p>
+                            </div>
+                            <div class="social-options text-secondary p-2 align-self-center fs-5">
+                                <i class="bi bi-circle"></i>
+                                <i class="bi bi-chat-left-fill"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
                         </div>
-                        <div class="social-options text-light p-2 align-self-center fs-5">
-                            <i class="bi bi-circle"></i>
-                            <i class="bi bi-chat-left-fill"></i>
-                            <i class="bi bi-three-dots-vertical"></i>
+                        <!--promo message-->
+                        <div class="promo d-flex p-1">
+                            <div class="pic-container text-center pt-2"> 
+                                <i class="bi bi-bell-fill "></i>
+                            </div>
+                            <div class="p-2">
+                                <p class="m-0">Ricevi notifiche per i tuoi messaggi</p>
+                                <p class="m-0 strike">Attiva notifiche desktop</p>
+                            </div>
+                        </div>
+                        <!--contact list-->
+                        <div class="contact-list">
+                            <div class="search-bar p-2">
+                                <input type="text" placeholder="cerca" class="form-control">
+                            </div>
+                            <div class="contact-wrapper">
+                                <ul class="p-0">
+                                    <li class="contact d-flex">
+                                        <div class="pic-container">
+                                            <img src="img/avatar_1.jpg" alt="">
+                                        </div>
+                                        <div class="contact-info">
+                                            <p>nome prova</p>
+                                            <p>info prova</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <!--promo message-->
-                    <div class="promo d-flex p-1">
-                        <div class="pic-container text-center pt-2"> 
-                            <i class="bi bi-bell-fill "></i>
-                        </div>
-                        <div class="p-2">
-                            <p class="m-0">Ricevi notifiche per i tuoi messaggi</p>
-                            <p class="m-0 strike">Attiva notifiche desktop</p>
-                        </div>
-                    </div>
-                    <!--contact list-->
-                    <div class="contact-list">
-                        <div class="search-bar p-2">
-                            <input type="text" placeholder="cerca" class="form-control">
+                    <!--sezione destra-->
+                    <div class="col-8 bordo p-0">
+                        <!--user info-->
+                        <div class="open-chat user-profile bordo d-flex justify-content-between">
+                            <div class="pic-container d-flex">
+                                <img src="img/avatar_1.jpg" alt="">
+                                <p class="username m-0">prova nome</p>
+                            </div>
+                            <div class="chat-files d-flex text-light justify-content-between p-1">
+                                <i class="bi bi-search"></i>
+                                <i class="bi bi-file-earmark-diff-fill"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
                         </div>
 
-                        <div class="contact-wrapper">
-                            <ul class="p-0">
-                                <li class="contact d-flex">
-                                    <div class="pic-container">
-                                        <img src="img/avatar_1.jpg" alt="">
-                                    </div>
-                                    <div class="contact-info">
-                                        <p>nome prova</p>
-                                        <p>info prova</p>
-                                    </div>
-                                </li>
-                                <li class="contact d-flex">
-                                    <div class="pic-container">
-                                        <img src="img/avatar_1.jpg" alt="">
-                                    </div>
-                                    <div class="contact-info">
-                                        <p>nome prova</p>
-                                        <p>info prova</p>
-                                    </div>
-                                </li>
-                                <li class="contact d-flex">
-                                    <div class="pic-container">
-                                        <img src="img/avatar_1.jpg" alt="">
-                                    </div>
-                                    <div class="contact-info">
-                                        <p>nome prova</p>
-                                        <p>info prova</p>
-                                    </div>
-                                </li>
-                                <li class="contact d-flex">
-                                    <div class="pic-container">
-                                        <img src="img/avatar_1.jpg" alt="">
-                                    </div>
-                                    <div class="contact-info">
-                                        <p>nome prova</p>
-                                        <p>info prova</p>
-                                    </div>
-                                </li>
-                                <li class="contact d-flex">
-                                    <div class="pic-container">
-                                        <img src="img/avatar_1.jpg" alt="">
-                                    </div>
-                                    <div class="contact-info">
-                                        <p>nome prova</p>
-                                        <p>info prova</p>
-                                    </div>
-                                </li>
-                                <li class="contact d-flex">
-                                    <div class="pic-container">
-                                        <img src="img/avatar_1.jpg" alt="">
-                                    </div>
-                                    <div class="contact-info">
-                                        <p>nome prova</p>
-                                        <p>info prova</p>
-                                    </div>
-                                </li>
-                                <li class="contact d-flex">
-                                    <div class="pic-container">
-                                        <img src="img/avatar_1.jpg" alt="">
-                                    </div>
-                                    <div class="contact-info">
-                                        <p>nome prova</p>
-                                        <p>info prova</p>
-                                    </div>
-                                </li>
-                                <li class="contact d-flex">
-                                    <div class="pic-container">
-                                        <img src="img/avatar_1.jpg" alt="">
-                                    </div>
-                                    <div class="contact-info">
-                                        <p>nome prova</p>
-                                        <p>info prova</p>
-                                    </div>
-                                </li>
-                                <li class="contact d-flex">
-                                    <div class="pic-container">
-                                        <img src="img/avatar_1.jpg" alt="">
-                                    </div>
-                                    <div class="contact-info">
-                                        <p>nome prova</p>
-                                        <p>info prova</p>
-                                    </div>
-                                </li>
-                                <li class="contact d-flex">
-                                    <div class="pic-container">
-                                        <img src="img/avatar_1.jpg" alt="">
-                                    </div>
-                                    <div class="contact-info">
-                                        <p>nome prova</p>
-                                        <p>info prova</p>
-                                    </div>
-                                </li>
-                                <li class="contact d-flex">
-                                    <div class="pic-container">
-                                        <img src="img/avatar_1.jpg" alt="">
-                                    </div>
-                                    <div class="contact-info">
-                                        <p>nome prova</p>
-                                        <p>info prova</p>
-                                    </div>
-                                </li>
-                            </ul>
+                        <!--chat-->
+                        <div class="main-chat p-3">
+                            <div class="question">
+                                <p class="green-txt p-3 rounded">prova messaggio</p>
+                            </div>
+                            <div class="answer">
+                                <p class="white-txt p-3 rounded"> prova risposta</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-8 bordo p-0">
-                    <div class="open-chat user-profile bordo d-flex justify-content-between">
-                        <div class="pic-container d-flex">
-                            <img src="img/avatar_1.jpg" alt="">
-                            <p>prova nome</p>
-                        </div>
-                        
-                        <div class="chat-files">
-                            <p>prova icone </p>
-                        </div>
-                    </div>
 
 
-                    <div class="main-chat p-3">
-                        <div class="question">
-                            <p class="green-txt p-3 rounded">prova messaggio</p>
+                        <!--scrivi messaggio-->
+                        <div class="user-message d-flex justify-content-between p-3">
+                            <p><i class="bi bi-emoji-expressionless"></i></p>
+                            <div class="text-bar">
+                                <input type="text" class="form-control">
+                            </div>
+                            <p><i class="bi bi-mic-fill"></i></p>
                         </div>
-                        <div class="answer">
-                            <p class="white-txt p-3 rounded"> prova risposta</p>
-                        </div>
-                        <div class="question">
-                            <p class="green-txt p-3 rounded">prova messaggio</p>
-                        </div>
-                        <div class="answer">
-                            <p class="white-txt p-3 rounded"> prova risposta</p>
-                        </div>
-                        <div class="question">
-                            <p class="green-txt p-3 rounded">prova messaggio</p>
-                        </div>
-                        <div class="answer">
-                            <p class="white-txt p-3 rounded"> prova risposta</p>
-                        </div>
-                        <div class="question">
-                            <p class="green-txt p-3 rounded">prova messaggio</p>
-                        </div>
-                        <div class="answer">
-                            <p class="white-txt p-3 rounded"> prova risposta</p>
-                        </div>
-                        <div class="question">
-                            <p class="green-txt p-3 rounded">prova messaggio</p>
-                        </div>
-                        <div class="answer">
-                            <p class="white-txt p-3 rounded"> prova risposta</p>
-                        </div>
-                        <div class="question">
-                            <p class="green-txt p-3 rounded">prova messaggio</p>
-                        </div>
-                        <div class="answer">
-                            <p class="white-txt p-3 rounded"> prova risposta</p>
-                        </div><div class="question">
-                            <p class="green-txt p-3 rounded">prova messaggio</p>
-                        </div>
-                        <div class="answer">
-                            <p class="white-txt p-3 rounded"> prova risposta</p>
-                        </div><div class="question">
-                            <p class="green-txt p-3 rounded">prova messaggio</p>
-                        </div>
-                        <div class="answer">
-                            <p class="white-txt p-3 rounded"> prova risposta</p>
-                        </div>
-                    </div>
 
-                    <div class="user-message d-flex justify-content-between p-3">
-                        <p><i class="bi bi-emoji-expressionless"></i></p>
-                        <div class="text-bar">
-                            <input type="text" class="form-control">
-                        </div>
-                        <p><i class="bi bi-mic-fill"></i></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
     <!--vue js-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- il mio js-->
+    <script src="script/data_milestone2.js"></script>
     <script src="script/script.js"></script>
 </body>
 </html>
