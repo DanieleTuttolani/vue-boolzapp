@@ -88,20 +88,28 @@ ul{
 }
 .main-chat p{
     width: fit-content;
+    padding: 15px;
+    border-radius: 15px;
 }
 .message-container{
     display: flex;
 }
-.message-container.sent-message{
-    justify-content: flex-end;
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
-.message-container.recived-message{
+.message.received{
     justify-content: flex-start;
+}
+.message.sent{
+    justify-content: flex-end;
+    width: 100%;
 }
 .message-container .message .sent{
     background-color: #d5f9ba;
 }
-.recived{
+.message-container .message .received{
     background-color: white;
 }
 .chat-files .bi{
@@ -116,7 +124,7 @@ ul{
 /* write section *********************/
 .user-message{
     max-height: 14%;
-    background-color: #fff;
+    background-color: rgb(238, 238, 238);
 }
 .user-message .text-bar{
     width: 85%;

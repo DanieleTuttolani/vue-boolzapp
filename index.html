@@ -44,7 +44,8 @@
                         </div>
                         <!--contact list-->
                         <div class="contact-list">
-                            <div class="search-bar p-2">
+                            <div class="search-bar p-2 d-flex align-content-center">
+                                <i class="bi bi-search fs-5"></i>
                                 <input type="text" placeholder="cerca" class="form-control">
                             </div>
                             <div class="contact-wrapper">
@@ -65,10 +66,10 @@
                     <!--sezione destra-->
                     <div class="col-8 bordo p-0">
                         <!--user info-->
-                        <div class="open-chat user-profile bordo d-flex justify-content-between">
-                            <div v-for='contact in contacts' class="pic-container d-flex">
-                                <img :src=`img/avatar${contact.avatar}.jpg` alt="">
-                                <p class="username m-0">{{contact.name}}</p>
+                        <div class="open-chat user-profile bordo d-flex justify-content-between p-2">
+                            <div  class="pic-container d-flex">
+                                <img :src="`img/avatar${showMe.avatar}.jpg`" alt="">
+                                <p class="username m-0">{{showMe.name}}</p>
                             </div>
                             <div class="chat-files d-flex text-light justify-content-between p-1">
                                 <i class="bi bi-search"></i>
@@ -79,15 +80,9 @@
                         <!--chat-->
                         
                         <div class="main-chat p-3 ">
-                            <div class="message-container sent-message">
-                                <div class="message">
-                                    <p class="sent p-3 rounded m-0">prova</p>
-                                </div>
-                            </div>
-                            
-                            <div class="message-container recived-message">
-                                <div class="message">
-                                    <p class="recived p-3 rounded m-0">prova</p>
+                            <div v-for="message in chatMessages" class="message-container">
+                                <div :class="`message ${message.status}`">
+                                    <p :class="message.status">{{message.text}}</p>
                                 </div>
                             </div>
                         </div>
