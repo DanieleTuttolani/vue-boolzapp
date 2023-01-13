@@ -22,11 +22,11 @@ const app = Vue.createApp({
             return newObj;
         } ,
         createNewAnswere(){
-            let newObj = {
+            let newObj2 = {
                 text : "ok my man" ,
                 status : "received"
             }
-            return newObj;
+            return newObj2;
         }
     },
     methods:{
@@ -36,6 +36,7 @@ const app = Vue.createApp({
         addMessage(){
             this.chatMessages.push(this.createNewSend);
             this.newText = ""
+            setTimeout( this.chatMessages.push(this.createNewAnswere), 4000)
 
         }
     }
