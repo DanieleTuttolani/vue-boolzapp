@@ -3,7 +3,8 @@ const app = Vue.createApp({
     data(){
         return{
             contacts,
-            currentIndex : 0
+            currentIndex : 0,
+            newText: ""
         }
     },
     computed:{
@@ -13,21 +14,29 @@ const app = Vue.createApp({
         chatMessages(){
             return this.showMe.messages;
         },
-        createNewObj(){
+        createNewSend(){
             let newObj = {
                 text : this.newText ,
                 status : "sent"
             }
             return newObj;
-        } 
+        } ,
+        createNewAnswere(){
+            let newObj = {
+                text : "ok my man" ,
+                status : "received"
+            }
+            return newObj;
+        }
     },
     methods:{
         setCurrentIndex(i){
             this.currentIndex = i
         },
         addMessage(){
-            this.chatMessages.push(this.createNewObj);
+            this.chatMessages.push(this.createNewSend);
             this.newText = ""
+
         }
     }
 })
