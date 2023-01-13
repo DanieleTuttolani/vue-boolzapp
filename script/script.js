@@ -13,6 +13,11 @@ const app = Vue.createApp({
         chatMessages(){
             return this.showMe.messages;
         }
+    },
+    methods:{
+        setCurrentIndex(i){
+            this.currentIndex = i
+        }
     }
 })
 

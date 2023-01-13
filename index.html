@@ -50,7 +50,7 @@
                             </div>
                             <div class="contact-wrapper">
                                 <ul class="p-0">
-                                    <li v-for='contact in contacts' class="contact d-flex">
+                                    <li v-for='(contact , i) in contacts' class="contact d-flex" @click="setCurrentIndex(i)">
                                         <div class="pic-container">
                                             <img :src=`img/avatar${contact.avatar}.jpg` alt="">
                                         </div>
