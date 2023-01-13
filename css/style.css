@@ -5,6 +5,7 @@
 }
 body{
     font-family: sans-serif;
+    background-color: lightgray;
 }
 
 
@@ -14,9 +15,9 @@ body{
     height: 150px;
     background-color: #009688;
 }
-.bordo{
+/* .bordo{
     border: 1px solid black;
-}
+} */
 img{
     max-width: 100%;
     height: auto;
@@ -88,12 +89,19 @@ ul{
 .main-chat p{
     width: fit-content;
 }
-.green-txt{
-    background-color: #d5f9ba;
-    position: relative;
-    left    : 80%;
+.message-container{
+    display: flex;
 }
-.white-txt{
+.message-container.sent-message{
+    justify-content: flex-end;
+}
+.message-container.recived-message{
+    justify-content: flex-start;
+}
+.message-container .message .sent{
+    background-color: #d5f9ba;
+}
+.recived{
     background-color: white;
 }
 .chat-files .bi{
@@ -102,7 +110,9 @@ ul{
     margin: 0  10px;
     color: gray;
 }
-
+.active{
+    display: block;
+}
 /* write section *********************/
 .user-message{
     max-height: 14%;

@@ -49,12 +49,12 @@
                             </div>
                             <div class="contact-wrapper">
                                 <ul class="p-0">
-                                    <li class="contact d-flex">
+                                    <li v-for='contact in contacts' class="contact d-flex">
                                         <div class="pic-container">
-                                            <img src="img/avatar_1.jpg" alt="">
+                                            <img :src=`img/avatar${contact.avatar}.jpg` alt="">
                                         </div>
                                         <div class="contact-info">
-                                            <p>nome prova</p>
+                                            <p>{{contact.name}}</p>
                                             <p>info prova</p>
                                         </div>
                                     </li>
@@ -66,9 +66,9 @@
                     <div class="col-8 bordo p-0">
                         <!--user info-->
                         <div class="open-chat user-profile bordo d-flex justify-content-between">
-                            <div class="pic-container d-flex">
-                                <img src="img/avatar_1.jpg" alt="">
-                                <p class="username m-0">prova nome</p>
+                            <div v-for='contact in contacts' class="pic-container d-flex">
+                                <img :src=`img/avatar${contact.avatar}.jpg` alt="">
+                                <p class="username m-0">{{contact.name}}</p>
                             </div>
                             <div class="chat-files d-flex text-light justify-content-between p-1">
                                 <i class="bi bi-search"></i>
@@ -76,18 +76,24 @@
                                 <i class="bi bi-three-dots-vertical"></i>
                             </div>
                         </div>
-
                         <!--chat-->
-                        <div class="main-chat p-3">
-                            <div class="question">
-                                <p class="green-txt p-3 rounded">prova messaggio</p>
+                        
+                        <div class="main-chat p-3 ">
+                            <div class="message-container sent-message">
+                                <div class="message">
+                                    <p class="sent p-3 rounded m-0">prova</p>
+                                </div>
                             </div>
-                            <div class="answer">
-                                <p class="white-txt p-3 rounded"> prova risposta</p>
+                            
+                            <div class="message-container recived-message">
+                                <div class="message">
+                                    <p class="recived p-3 rounded m-0">prova</p>
+                                </div>
                             </div>
                         </div>
-
-
+                        
+                        
+                        
                         <!--scrivi messaggio-->
                         <div class="user-message d-flex justify-content-between p-3">
                             <p><i class="bi bi-emoji-expressionless"></i></p>
@@ -96,7 +102,6 @@
                             </div>
                             <p><i class="bi bi-mic-fill"></i></p>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -106,6 +111,6 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- il mio js-->
     <script src="script/data_milestone2.js"></script>
-    <script src="script/script.js"></script>
+    <script defer src="script/script.js"></script>
 </body>
 </html>
