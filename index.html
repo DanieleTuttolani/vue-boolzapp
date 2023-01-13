@@ -93,7 +93,7 @@
                         <div class="user-message d-flex justify-content-between p-3">
                             <p><i class="bi bi-emoji-expressionless"></i></p>
                             <div class="text-bar">
-                                <input type="text" class="form-control">
+                                <input @keyup.enter="addMessage" v-model="newText" type="text" class="form-control">
                             </div>
                             <p><i class="bi bi-mic-fill"></i></p>
                         </div>

@@ -12,11 +12,22 @@ const app = Vue.createApp({
         },
         chatMessages(){
             return this.showMe.messages;
-        }
+        },
+        createNewObj(){
+            let newObj = {
+                text : this.newText ,
+                status : "sent"
+            }
+            return newObj;
+        } 
     },
     methods:{
         setCurrentIndex(i){
             this.currentIndex = i
+        },
+        addMessage(){
+            this.chatMessages.push(this.createNewObj);
+            this.newText = ""
         }
     }
 })
