@@ -46,16 +46,17 @@
                         <div class="contact-list">
                             <div class="search-bar p-2 d-flex align-content-center">
                                 <i class="bi bi-search fs-5"></i>
-                                <input type="text" placeholder="cerca" class="form-control">
+                                <input v-model="filteredTerm"  type="text" placeholder="Cerca tra le tue chat" class="form-control border-0">
                             </div>
                             <div class="contact-wrapper">
                                 <ul class="p-0">
-                                    <li v-for='(contact , i) in contacts' class="contact d-flex" @click="setCurrentIndex(i)">
+                                    <p v-if="!filteredList"> nessun risultato con i criteri di ricerca attuali</p>
+                                    <li v-for='(contact , i) in filteredList' class="contact d-flex" @click="setCurrentIndex(i)">
                                         <div class="pic-container">
                                             <img :src=`img/avatar${contact.avatar}.jpg` alt="">
                                         </div>
                                         <div class="contact-info">
-                                            <p>{{contact.name}}</p>
+                                            <p class="text-capitalize">{{contact.name}}</p>
                                             <p>info prova</p>
                                         </div>
                                     </li>
@@ -69,7 +70,7 @@
                         <div class="open-chat user-profile bordo d-flex justify-content-between p-2">
                             <div  class="pic-container d-flex">
                                 <img :src="`img/avatar${showMe.avatar}.jpg`" alt="">
-                                <p class="username m-0">{{showMe.name}}</p>
+                                <p class="username m-0 text-capitalize">{{showMe.name}}</p>
                             </div>
                             <div class="chat-files d-flex text-light justify-content-between p-1">
                                 <i class="bi bi-search"></i>

@@ -1,6 +1,6 @@
 contacts = [
   {
-    name: 'Michele',
+    name: 'michele',
     avatar: '_1',
     visible: true,
     messages: [
@@ -22,7 +22,7 @@ contacts = [
     ],
   },
   {
-    name: 'Fabio',
+    name: 'fabio',
     avatar: '_2',
     visible: true,
     messages: [{
@@ -43,7 +43,7 @@ contacts = [
     ],
   },
   {
-    name: 'Samuele',
+    name: 'samuele',
     avatar: '_3',
     visible: true,
     messages: [{
@@ -64,7 +64,7 @@ contacts = [
     ],
   },
   {
-    name: 'Luisa',
+    name: 'luisa',
     avatar: '_4',
     visible: true,
     messages: [{

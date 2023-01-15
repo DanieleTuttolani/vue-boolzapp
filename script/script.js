@@ -4,7 +4,8 @@ const app = Vue.createApp({
         return{
             contacts,
             currentIndex : 0,
-            newText: ""
+            newText: "",
+            filteredTerm : ""
         }
     },
     computed:{
@@ -27,6 +28,9 @@ const app = Vue.createApp({
                 status : "received"
             }
             return newObj2;
+        },
+        filteredList(){
+            return this.contacts.filter(contact => contact.name.includes(this.filteredTerm))
         }
     },
     methods:{
@@ -38,7 +42,13 @@ const app = Vue.createApp({
             this.newText = ""
             setTimeout( this.chatMessages.push(this.createNewAnswere), 4000)
 
-        }
+        },
+        prova(){
+            this.contacts.forEach(contact => {
+               contact.visible = contact.name.toLowerCase().includes(this.filteredTerm.toLowerCase())
+            })
+        } 
+
     }
 })
 

@@ -65,6 +65,9 @@ ul{
 .search-bar{
     min-height: 60px;
 }
+.contact-list .bi-search{
+    align-self: center;
+}
 .contact-wrapper{
     max-height: 582px;
     overflow: auto;
