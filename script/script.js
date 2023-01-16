@@ -43,11 +43,6 @@ const app = Vue.createApp({
             setTimeout( this.chatMessages.push(this.createNewAnswere), 4000)
 
         },
-        prova(){
-            this.contacts.forEach(contact => {
-               contact.visible = contact.name.toLowerCase().includes(this.filteredTerm.toLowerCase())
-            })
-        } 
 
     }
 })

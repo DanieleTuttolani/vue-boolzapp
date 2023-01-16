@@ -26,6 +26,9 @@ img{
 ul{
     list-style-type: none;
 }
+.time{
+    font-size: 0.7rem;
+}
 /*! main app****************************/
 /*! left side ***********************************/
 .app-wrapper{
@@ -83,6 +86,9 @@ ul{
     border-bottom: 1px solid gray;
 }
 /*! right side *******************************/
+.open-chat .pic-container{
+    flex-basis: 40%;
+}
 .main-chat{
     height: 650px;
     overflow:auto;
