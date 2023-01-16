@@ -51,7 +51,7 @@
                             <div class="contact-wrapper">
                                 <ul class="p-0">
                                     <p v-if="!filteredList"> nessun risultato con i criteri di ricerca attuali</p>
-                                    <li v-for='(contact , i) in filteredList' class="contact d-flex" @click="setCurrentIndex(i)">
+                                    <li v-for='(contact , i) in filteredList' class="contact d-flex" @click="setCurrentIndex(contact.id)">
                                         <div class="pic-container">
                                             <img :src=`img/avatar${contact.avatar}.jpg` alt="">
                                         </div>

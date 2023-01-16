@@ -1,5 +1,6 @@
 contacts = [
   {
+    id : 0,
     name: 'michele',
     avatar: '_1',
     visible: true,
@@ -22,6 +23,7 @@ contacts = [
     ],
   },
   {
+    id : 1,
     name: 'fabio',
     avatar: '_2',
     visible: true,
@@ -43,6 +45,7 @@ contacts = [
     ],
   },
   {
+    id: 2,
     name: 'samuele',
     avatar: '_3',
     visible: true,
@@ -64,6 +67,7 @@ contacts = [
     ],
   },
   {
+    id : 3,
     name: 'luisa',
     avatar: '_4',
     visible: true,

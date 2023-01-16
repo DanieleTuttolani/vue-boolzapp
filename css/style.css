@@ -80,6 +80,7 @@ ul{
     width: 60px;
     border-radius: 50%;
     background-color: #fff;
+    cursor: pointer;
 }
 .contact-wrapper li {
     background-color: #fff;
